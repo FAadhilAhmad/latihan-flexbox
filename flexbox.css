@@ -8,6 +8,7 @@ body{
     line-height: 1.65;
     padding-bottom: 1000px;
 }
+/* latihan satu */
 .container-satu{
     width: 800px;
     margin: 50px auto;
@@ -30,3 +31,33 @@ body{
     order: 3;
 
 }
+/* latihan dua */
+.container-dua{
+    max-width: 800px;
+    margin: 50px auto;
+}
+.layanan{
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.layanan.satu{
+    background-color: rgb(114, 114, 254);
+}
+.layanan.dua{
+    background-color: rgb(95, 217, 95);
+}
+.layanan.tiga{
+    background-color: rgb(244, 117, 117);
+}
+/* responsive */
+@media( min-width: 600px ){
+    .container-dua{
+        display: flex;
+        justify-content: space-between;
+    }
+    .layanan{
+        width: 30%;
+    }
+}
+/* akhir latihan tiga */
