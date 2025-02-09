@@ -1,109 +1,100 @@
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>pengulangan materi</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- latihan pertama -->
-    <div class="container-satu">
-      <div class="kolom-utama">
-        <h2>judul artikel</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, sint
-          quod doloremque asperiores numquam, excepturi error nostrum alias
-          voluptas sequi adipisci fugit nisi. Earum, minus!
-        </p>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id
-          architecto quibusdam ipsum dolorum voluptate inventore iure
-          perferendis temporibus eos tenetur facilis nemo nobis enim dicta
-          molestias dignissimos quos iste aspernatur vitae doloribus,
-          accusantium accusamus vero assumenda? Sit dicta aliquid vel.
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
-          dolore sint natus, tempora tenetur magni nobis illum dolorem mollitia
-          magnam expedita accusamus libero sapiente optio praesentium minima
-          totam quos illo vero esse adipisci rerum dolor omnis. Cupiditate quae
-          iste repellendus!
-        </p>
-      </div>
-      <div class="sidebar-satu">
-        <h3>sidebar satu</h3>
-        <ul>
-          <li><a href="">link 1</a></li>
-          <li><a href="">link 2</a></li>
-          <li><a href="">link 3</a></li>
-          <li><a href="">link 4</a></li>
-          <li><a href="">link 5</a></li>
-        </ul>
-      </div>
-      <div class="sidebar-dua">
-        <h3>sidebar dua</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-          aliquid praesentium nam, provident beatae velit cupiditate. Earum iure
-          provident officiis voluptatibus deserunt, totam doloribus nostrum.
-        </p>
-      </div>
-    </div>
-    <!-- akhir latihan pertama -->
-    <div class="container-dua">
-      <div class="layanan satu">
-        <h4>layanan-satu</h4>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae,
-          suscipit.
-        </p>
-      </div>
-      <div class="layanan dua">
-        <h4>layanan-dua</h4>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
-          temporibus fugiat fuga fugit. Est, iste!
-        </p>
-      </div>
-      <div class="layanan tiga">
-        <h4>layanan-tiga</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-          veniam officiis, vel similique voluptas nulla cumque excepturi
-          quisquam nisi dignissimos.
-        </p>
-      </div>
-    </div>
-    <!-- akhir latihan ke tiga  -->
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ddd;
+    line-height: 1.65;
+    padding-bottom: 1000px;
+}
+/* latihan satu */
+.container-satu{
+    width: 800px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+}
+.kolom-utama{
+    flex: 3;
+    order: 2;
 
-    <!-- latihan ke tiga -->
-     <div class="proyek">
-      <div class="proyeks satu">
-        <h4> proyek pengembagan web</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ipsam, cum tenetur culpa ipsa praesentium fuga cumque? Commodi, quis quae.</p>
-      </div>
-      <div class="proyeks dua">
-        <h4> proyek pengembagan app </h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi deleniti aliquam non repellat voluptatibus pariatur nulla eius quam, minus dolorum?</p>
-      </div>
-     </div>
-    <!-- akhir latihan ke tiga  -->
+}
+.sidebar-satu{
+    flex: 1;
+    order: 1;
+}
+.sidebar-dua{
+    flex: 1;
+    order: 3;
 
-    <!-- latihan ke empat -->
-     <div class="container-tiga">
-      <div class="thumbnail">
-        <img src="/cuy university semester 1/img/portfolio-2.png" alt="">
-      </div>
-      <div class="thumbnail">
-        <img src="/cuy university semester 1/img/portfolio-2.png" alt="">
-      </div>
-      <div class="thumbnail">
-        <img src="/cuy university semester 1/img/portfolio-2.png" alt="">
-      </div>
-      <div class="thumbnail">
-        <img src="/cuy university semester 1/img/portfolio-2.png" alt="">
-      </div>
-     </div>
-     
-  </body>
-</html>
+}
+/* latihan dua */
+.container-dua{
+    max-width: 800px;
+    margin: 50px auto;
+}
+.layanan{
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.layanan.satu{
+    background-color: rgb(114, 114, 254);
+}
+.layanan.dua{
+    background-color: rgb(95, 217, 95);
+}
+.layanan.tiga{
+    background-color: rgb(244, 117, 117);
+}
+/* akhir latihan tiga */
+
+/* proyek  */
+.proyek{
+    max-width: 800px;
+    margin: 50 auto;
+    display: flex;
+    width: 100%;
+}
+.proyeks{
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+.proyeks.satu{
+    background-color: white;
+}
+.proyeks.dua{
+    background-color: white;
+}
+
+.container-tiga{
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.thumbnail{
+    margin: 10px;
+    width: 40%;
+}
+.thumbnail img{
+    width: 100%;
+}
+
+/* responsive */
+@media( min-width: 600px ){
+    .container-dua{
+        display: flex;
+        justify-content: space-between;
+    }
+    .layanan{
+        width: 30%;
+    }
+}
